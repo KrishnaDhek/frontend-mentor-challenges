@@ -15,7 +15,7 @@ This is a solution to the [QR Code Component Challenge](https://www.frontendment
 
 ## Screenshot 📸
 
-![QR Code Component](./image/image-qr-code.png)
+![QR Code Component](./image/Screenshot%202025-01-27%20at%204.57.29 PM.png)
 
 ## Links 🔗
 
