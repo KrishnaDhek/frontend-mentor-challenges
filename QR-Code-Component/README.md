@@ -2,7 +2,7 @@
 
 ## Overview 🌟
 
-This is a solution to the [QR Code Component Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_s5U6S) from Frontend Mentor. The challenge involves building a simple, responsive QR code component using HTML and CSS.
+This is a solution to the [QR Code Component Challenge](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) from Frontend Mentor. The challenge involves building a simple, responsive QR code component using HTML and CSS.
 
 ## Table of Contents 📚
 
