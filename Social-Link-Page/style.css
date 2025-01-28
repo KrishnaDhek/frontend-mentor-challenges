@@ -32,6 +32,7 @@ img {
     width: 100px;
     border-radius: 50px;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 
 
