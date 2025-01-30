@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(219, 230, 240);
+}
+
+.container {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    width: 640px;
+    height: 100%;
+    border-radius: 20px;
+    margin: 20px auto;
+    gap: 10px;
+    background-color: white;   
+}
+
+.score-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    gap: 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result, .full-marks, .description, .number  {
+    color: hsla(0, 0%, 100%,0.5);
+}
+
+.circle-score {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+     
+}
+
+.marks {
+    color: white;
+    font-size: 5rem;
+}
+
+.description {
+    padding-left:30px ;
+    padding-right: 30px;
+    text-align: center;
+    font-size: 1.2rem;
+    
+    
+
+}
+
+.score-card h4 {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.summary-card {
+    width: 320px;
+    display: flex;
+    align-self:flex-start;
+    gap: 20px;
+    flex-direction: column;
+    padding: 20px;
+    
+
+}
+
+.summary-card h3 {
+   color: rgb(52, 34, 102);
+}
+
+.summary-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.list {
+    display: flex;
+    gap: 5px;
+}
+
+.reactions {
+    color:hsl(0, 100%, 67%);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsla(0, 100%, 67%, 0.1);
+    
+}
+
+.memory {
+    color:hsl(39, 100%, 56%);
+    padding: 10px;
+    border-radius: 5px;
+   background-color: hsla(39, 100%, 56%, 0.1);
+    
+}
+
+.verbal {
+    color:hsl(166, 100%, 37%);
+    padding: 10px;
+    border-radius: 5px;
+    background-color: hsla(166, 100%, 37%, 0.1)
+    
+}
+
+.visual {
+    color:hsl(234, 85%, 45%);
+    padding: 10px;
+    border-radius: 5px;
+     background-color: hsla(234, 85%, 45%, 0.1);
+    
+}
+
+.number span {
+    color:rgb(25, 1, 94);
+    font-weight:bold ;
+    font-size: 1rem;
+}
+
+
+.number {
+    
+    font-size: 1rem;
+    color: rgba(155, 154, 154, 0.6);
+}
+
+button {
+    border: none;
+    margin-top: 15px;
+    font-weight: bold;
+    padding: 20px;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: hsla(224, 29%, 27%, 1);
+    color: white;
+}
+
+
+.attribution { 
+    font-size: 15px;
+    
+}
+
+.attribution a { 
+    color: hsl(224, 100%, 22%); 
+}
+
+@media (max-width:480px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 90%;
+        min-height: 100%;
+         border-top-left-radius:0px ;
+          border-top-right-radius:0px ;
+        
+       
+    }
+
+    .score-card {
+    width: 100%;
+   padding-top: 20px;
+   padding-bottom: 30px;
+    border-top-right-radius:0px ;
+     border-top-left-radius:0px ;
+  }
+  .summary-card {
+     width: 90%;
+       
+  }
+}
