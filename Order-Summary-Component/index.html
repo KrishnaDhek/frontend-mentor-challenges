@@ -1,33 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order summary component</title>
-</head>
-<body>
-   <div class="container">
-    <div class="hero-section">
-        <img src="./images/illustration-hero.svg" alt="">
-    </div>
-    <div class="hero-description">
-        <h2>Order Summary</h2>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <img src="./images/illustration-hero.svg" alt="" />
 
-        <p>
-            You can now listen to million of songs, audiobooks, and podcast on any device anywhere you like.!
-        </p>
-        <div class="hero-order">
-            <img src="./images/icon-music.svg" alt="">
-            <h4>Annual Plan</h4>
-            <p>$59.99/yead</p>
-            <a href="#">Change</a>
-        </div>
+        <div class="hero-description">
+          <h2>Order Summary</h2>
+          <p class="note">
+            You can now listen to millions of songs, audiobooks, and podcast on
+            any device anywhere you like.!
+          </p>
+          <div class="hero-order">
+            <img src="./images/icon-music.svg" alt="" />
+            <div class="type">
+              <h4 class="type-plan">Annual Plan</h4>
+              <p class="amount">$59.99/year</p>
+            </div>
+            <a href="#" class="type-change">Change</a>
+          </div>
 
-        <div class="hero-buttons">
+          <div class="hero-buttons">
             <button class="payment">Proceed to Payment</button>
-             <button class="cancleOrder">Cancle Order</button>
+            <a class="cancelOrder">Cancel Order</a>
+          </div>
         </div>
+      </div>
     </div>
-   </div>
-</body>
+  </body>
 </html>
