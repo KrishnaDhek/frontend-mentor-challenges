@@ -23,8 +23,8 @@ This is a solution to the [Order Summary Component Challenge](https://www.fronte
 
 ## Links 🔗
 
-- Live Site: [View Live Site](https://your-live-site-link)
-- Solution Repository: [GitHub Repository](https://github.com/KrishnaDhek/frontend-mentor-challenges/tree/main/order-summary-component)
+- Live Site: [View Live Site](https://radiant-chimera-f80273.netlify.app/)
+- Solution Repository: [GitHub Repository](https://github.com/KrishnaDhek/frontend-mentor-challenges)
 
 ## Technologies Used ⚙️
 
