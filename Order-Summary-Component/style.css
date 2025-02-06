@@ -1,0 +1,173 @@
+:root {
+  --veryPaleBlue: hsl(225, 100%, 98%);
+  --DesaturatedBlue: hsl(224, 23%, 55%);
+  --DarkBlue: hsl(223, 47%, 23%);
+  --PaleBlue: hsl(225, 100%, 94%);
+  --BrightBlue: hsl(245, 75%, 52%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:"Red Hat Display", serif;
+}
+
+body {
+  background: url(./images/pattern-background-desktop.svg), var(--PaleBlue);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 380px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .11);
+  gap: 20px;
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.hero-description {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.hero-description h2{
+    color: var(--DarkBlue);
+}
+.note {
+  text-align: center;
+  font-size: 16px;
+  color: var(--DesaturatedBlue);
+}
+
+.hero-order {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  background-color: var(--veryPaleBlue);
+  border-radius: 10px;
+  padding: 14px;
+  
+}
+
+.type {
+  flex: 1;
+}
+.type-plan {
+    color: var(--DarkBlue);
+    font-weight: 900;
+}
+
+.type .amount {
+  color: var(--DesaturatedBlue);
+}
+
+
+.type-change {
+    font-weight: 700;
+    color: var(--BrightBlue);
+}
+.hero-order img {
+  width: 40px;
+  height: 40px;
+}
+
+.hero-order a:hover{
+    text-decoration: none;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 90%;
+}
+
+.hero-buttons .payment {
+  width: 100%;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--BrightBlue);
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 15px 25px 0 hsla(245, 75%, 52%, .35);
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.cancelOrder {
+  color: var(--DesaturatedBlue);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+
+
+@media (max-width:480px) {
+    body {
+        overflow-x: hidden;
+    }
+    .container{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        max-width: 100%;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    .hero-description{
+        padding: 25px;
+        line-height: 1.6;
+    }
+    .hero-order {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+    .payment .cancelOrder {
+        font-size: 0.8rem;
+    }
+}
